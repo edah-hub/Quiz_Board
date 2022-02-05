@@ -1,0 +1,7 @@
+.info_box .button_1,.button_2{
+    background-color: #2bff00;
+    height: 60px;
+   float: right;
+   cursor: pointer;
+   padding: 5%;
+}

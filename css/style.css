@@ -1,7 +1,24 @@
 .info_box .button_1,.button_2{
-    background-color: #2bff00;
-    height: 60px;
-   float: right;
-   cursor: pointer;
-   padding: 5%;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    height: 5px;
+    float: right;
+    cursor: pointer;
+    padding: 5%;
+    display: flex;
+    border-radius: 5%;
+    flex-direction: row-reverse;
+    margin-bottom: 50%;
+}
+
+.info_box .button_1 {
+    margin-right: 5%;
+    margin-left: 40%;
+    border-color: none;
+    background-color: #8ac97d;;
+    
+}
+.info_box .button_2{
+    background-color: #8f9e8c;
 }

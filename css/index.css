@@ -6,13 +6,13 @@
 
 .begin {
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 50%;
   transform: translate(-60%, -40%);
   font-size: 30px;
   font-weight: 600;
   color: #000;
-  padding: 70px 50px;
+  padding: 50px 20px;
   outline: none;
   border: #000;
   border-radius: 5px;
@@ -27,22 +27,25 @@ body {
     position: absolute;
     top: 20%;
     left: 30%;
+    right: 30%;
+    bottom: 40%;
 
 }
 .info_box .info_title{
-    padding: 0% 30px;
+    position:relative;
+    padding: 5% 10% 10% 10%;
     font-weight: 400;
     display: flex;
     align-items: center; 
     border-color: antiquewhite;
     font-size: 20px;
-  
-
 }
+
 .info_box .info_list{
 
-    padding: 12% 15%;
-
+    padding: 0% 10%;
+    margin-top:-5%;
+    margin-bottom: 5%
 }
 
 .info_box .info_list .info{
@@ -56,9 +59,6 @@ body {
   
   }
 
-
-
-
 .begin button{
   font-size: 24px;
   font-weight: 600;
@@ -69,5 +69,3 @@ body {
   border-radius: 5px;
   cursor: pointer;
 }
-
-

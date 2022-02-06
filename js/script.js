@@ -32,5 +32,3 @@ function mySubmitButton(){
     }
 
 }
-//alert
-function mySubmitButton(){alert("Quiz submitted!");}

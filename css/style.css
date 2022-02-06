@@ -58,10 +58,13 @@
   margin-top: 5%;
   margin-left: 80%;
   position: absolute;
-  padding: 50px 20px;
+  padding: 30px 10px;
   outline: none;
   border: #000;
   border-radius: 5px;
+  height: 10px;
+  color: orange;
+
 }
 
 

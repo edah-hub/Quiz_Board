@@ -17,6 +17,14 @@
   </head>
 
   <body>
+
+    <div class="school_name">
+      <h1>Bright-Minds Online School</h1>
+    </div>
+    <span class="logo" >
+      <img src="./images/haze.png"alt="logo" style="width:100%;"/>
+    </span>
+
     <div class="info_box">
       <div class="info_title">
         <span> <b>Rules for the Quiz </b> </span>
@@ -45,15 +53,11 @@
       <div class="begin"><button>Begin Quiz</button></div>
     </div>
 
-    <div id="results"></div>
-    <div id="results"></div>
-
-    <div class="Quiz_board"></div>
     <header>
-      <div class="title">Awesome quiz app</div>
+      <div class="title">Online quiz app</div>
       <!--to set timer-->
       <div class="timer">
-        <div class="time-text">Remaining Time</div>
+        <div class="time-text">Remaining Time (s):</div>
         <div class="timer_secs">30</div>
       </div>
     </header>
@@ -228,6 +232,9 @@
         <div class="submit_btn">
           <input type="button" value="Submit" onclick="mySubmitButton()" />
         </div>
+        <div id="results"></div>
+        <div id="results"></div>
+
         <div><button class="button_exit">Exit</button></div>
       </div>
     </form>

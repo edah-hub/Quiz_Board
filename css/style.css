@@ -1,14 +1,46 @@
+.logo img{
+    margin-bottom: 0%;
+    flex-direction: row;
+    object-fit: contain;
+    position: absolute;
+    margin-top: 50x;
+
+}
+.school_name{
+    font-size: large;
+    font-weight: bolder;
+    margin-left: 30px;
+
+}
+.title{
+    position: absolute;
+    width: 100%;
+    left: 10%;
+    font-size: large;
+
+}
+.timer{
+    position: absolute;
+    width: 100%;
+    left: 70%;
+    margin-top: 30px;
+    font-size: large;
+    
+
+}
 .all_questions {
   position: absolute;
   top: 70%;
   left: 20%;
   right: 20%;
   height: 100%;
+
 }
 
 .all_questions .quizzes {
   margin-left: 5px;
   margin-bottom: 15px;
+
 }
 
 .submit_btn {
@@ -31,3 +63,6 @@
   border: #000;
   border-radius: 5px;
 }
+
+
+

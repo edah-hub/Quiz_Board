@@ -5,112 +5,231 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Awesome Quiz App</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+    />
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <script>
-      src = "https://kit.fontawesome.com/a076d05399.js";
-    </script>
+    <script src="./js/script.js"></script>
+    <script src="./js/Script.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
-  <body>
-    <div class="begin"><button> Begin Quiz</button> </div>
 
+  <body>
     <div class="info_box">
-        <div class="info_title">
-            <span> <b>Rules for the Quiz </b> </span>
-        </div>
+      <div class="info_title">
+        <span> <b>Rules for the Quiz </b> </span>
+      </div>
       <div class="info_list">
         <div class="info">
-          1.You only have <span>30 seconds </span> to answer each question.
+          1. You only have <span>30 seconds </span> to answer each question.
         </div>
         <div class="info">
-          2.Once you have selected an aswer, you can not reselect.
+          2. Once you have selected an aswer, you can not reselect.
         </div>
         <div class="info">
-          3.You should not switch between tabs once you have started the quiz.
+          3. You should not switch between tabs once you have started the quiz.
         </div>
         <div class="info">
-          4.Once you have started the quiz, you can not exit.
+          4. Once you have started the quiz, you can not exit.
         </div>
         <div class="info">
-          5.You are awarded points for every correct choice you select.
+          5. You are awarded points for every correct choice you select.
         </div>
         <div class="info">
-          6.Read all the instructions before you start the quiz
+          6. Read all the instructions before you start the quiz
         </div>
       </div>
-      <div class="buttons">
-        <button class="button_1">Continue...</button>
-        <button class="button_2">Exit </button>
-      </div>
-    </div>
-<div class="Quiz_board"></div>
-<header>
-    <div class="title">Awesome quiz app</div>
-    <!--to set timer-->
-    <div class="timer">
-      <div class="time-text">Remaining Time</div>
-      <div class="timer_secs">30</div>
-    </div>
-</header>
 
-<form name="Questions" id="Quiz">
-  <h2>Questions</h2>
-  <div class="quizzes">
-    <h3>1. What does HTMl stand for?</h3>
-    <p><input type="radio" name="question1" id="" value="hyper Text Markup Language">A: hyper Text Markup Language</p>
-    <p><input type="radio" name="question1" id="" value="hyper Text Preprocessor">B: hyper Text Preprocessor </p>
-    <p><input type="radio" name="question1" id="" value="hyper Text Multiple Languages">C: hyper Text Multiple Languages</p>
-    <p><input type="radio" name="question1" id="" value="hyper Tool Multiple Languages">D: hyper Tool Multiple Languages</p>
+      <div class="begin"><button>Begin Quiz</button></div>
     </div>
 
-    <div class="quizzes">
-      <h3>2. What does CSS stand for?</h3>
-      <p><input type="radio" name="question2" id="" value="Common Style Sheet">A: Common Style Sheet</p>
-      <p><input type="radio" name="question2" id="" value="Colorful Style Sheet">B: Colorful Style Sheet </p>
-      <p><input type="radio" name="question2" id="" value="Computer Style Sheet">C: Computer Style Sheet</p>
-      <p><input type="radio" name="question2" id="" value="Cascading Style Sheet">D: Cascading Style Sheet</p>
+    <div id="results"></div>
+    <div id="results"></div>
+
+    <div class="Quiz_board"></div>
+    <header>
+      <div class="title">Awesome quiz app</div>
+      <!--to set timer-->
+      <div class="timer">
+        <div class="time-text">Remaining Time</div>
+        <div class="timer_secs">30</div>
       </div>
-
-      <div class="quizzes">
-        <h3>3. What does PHP stand for?</h3>
-        <p><input type="radio" name="question2" id="" value="Hypertext Preprocessor">A: Hypertext Preprocessor</p>
-        <p><input type="radio" name="question2" id="" value="Hypertext Programming">B: Hypertext Programming </p>
-        <p><input type="radio" name="question2" id="" value="Hypertext Preprogramming">C: Hypertext Preprogramming</p>
-        <p><input type="radio" name="question2" id="" value="Statement Question Language">D: Hometext Preprocessor</p>
+    </header>
+    <form name="Questions" id="quiz">
+      <div class="all_questions">
+        <h2>Questions</h2>
+        <div class="quizzes">
+          <h3>1. What does HTMl stand for?</h3>
+          <p>
+            <input
+              type="radio"
+              name="question1"
+              id=""
+              value="hyper Text Markup Language"
+            />A: hyper Text Markup Language
+          </p>
+          <p>
+            <input
+              type="radio"
+              name="question1"
+              id=""
+              value="hyper Text Preprocessor"
+            />B: hyper Text Preprocessor
+          </p>
+          <p>
+            <input
+              type="radio"
+              name="question1"
+              id=""
+              value="hyper Text Multiple Languages"
+            />C: hyper Text Multiple Languages
+          </p>
+          <p>
+            <input
+              type="radio"
+              name="question1"
+              id=""
+              value="hyper Tool Multiple Languages"
+            />D: hyper Tool Multiple Languages
+          </p>
         </div>
 
-        <h3>4. What is JS in full?</h3>
-        <p><input type="radio" name="question2" id="" value="Java Script">A: Java Script</p>
-        <p><input type="radio" name="question2" id="" value="An Operating System">B: An Operating System</p>
-        <p><input type="radio" name="question2" id="" value="Java Systems">C: Java Systems</p>
-        <p><input type="radio" name="question2" id="" value="Java">D: Java</p>
+        <div class="quizzes">
+          <h3>2. What does CSS stand for?</h3>
+          <p>
+            <input
+              type="radio"
+              name="question2"
+              id=""
+              value="Common Style Sheet"
+            />A: Common Style Sheet
+          </p>
+          <p>
+            <input
+              type="radio"
+              name="question2"
+              id=""
+              value="Colorful Style Sheet"
+            />B: Colorful Style Sheet
+          </p>
+          <p>
+            <input
+              type="radio"
+              name="question2"
+              id=""
+              value="Computer Style Sheet"
+            />C: Computer Style Sheet
+          </p>
+          <p>
+            <input
+              type="radio"
+              name="question2"
+              id=""
+              value="Cascading Style Sheet"
+            />D: Cascading Style Sheet
+          </p>
         </div>
 
-        <h3>5. What does SQL stand for?</h3>
-        <p><input type="radio" name="question2" id="" value="Stylish Question Language">A: Stylish Question Language</p>
-        <p><input type="radio" name="question2" id="" value="Stylesheet Query Language">B: Stylesheet Query Language </p>
-        <p><input type="radio" name="question2" id="" value="Startpoint Query Language">C: Startpoint Query Language</p>
-        <p><input type="radio" name="question2" id="" value="Statement Question Language">D: Statement Question Language</p>
+        <div class="quizzes">
+          <h3>3. What does PHP stand for?</h3>
+          <p>
+            <input
+              type="radio"
+              name="question3"
+              id=""
+              value="Hypertext Preprocessor"
+            />A: Hypertext Preprocessor
+          </p>
+          <p>
+            <input
+              type="radio"
+              name="question3"
+              id=""
+              value="Hypertext Programming"
+            />B: Hypertext Programming
+          </p>
+          <p>
+            <input
+              type="radio"
+              name="question3"
+              id=""
+              value="Hypertext Preprogramming"
+            />C: Hypertext Preprogramming
+          </p>
+          <p>
+            <input
+              type="radio"
+              name="question3"
+              id=""
+              value="Statement Question Language"
+            />D: Hometext Preprocessor
+          </p>
         </div>
-        <div class="submit-btn">
-          <input type="button" value="Submit" onclick="mySubmitButton()">
+        <div class="quizzes">
+          <h3>4. What is JS in full?</h3>
+          <p>
+            <input type="radio" name="question4" id="" value="Java Script" />A:
+            Java Script
+          </p>
+          <p>
+            <input
+              type="radio"
+              name="question4"
+              id=""
+              value="An Operating System"
+            />B: An Operating System
+          </p>
+          <p>
+            <input type="radio" name="question4" id="" value="Java Systems" />C:
+            Java Systems
+          </p>
+          <p>
+            <input type="radio" name="question4" id="" value="Java" />D: Java
+          </p>
+        </div>
+        <div class="quizzes">
+          <h3>5. What does SQL stand for?</h3>
+          <p>
+            <input
+              type="radio"
+              name="question5"
+              id=""
+              value="Sequential Query Language"
+            />A: Sequential Query Language
+          </p>
+          <p>
+            <input
+              type="radio"
+              name="question5"
+              id=""
+              value="Stylesheet Query Language"
+            />B: Stylesheet Query Language
+          </p>
+          <p>
+            <input
+              type="radio"
+              name="question5"
+              id=""
+              value="Startpoint Query Language"
+            />C: Startpoint Query Language
+          </p>
+          <p>
+            <input
+              type="radio"
+              name="question5"
+              id=""
+              value="Statement Question Language"
+            />D: Statement Question Language
+          </p>
+        </div>
+
+        <div class="submit_btn">
+          <input type="button" value="Submit" onclick="mySubmitButton()" />
+        </div>
+        <div><button class="button_exit">Exit</button></div>
       </div>
-      
-</form>
-
-<div class="Results">
-</div>
-
-
-
-
-
-
-
-
-
-
-
-<script src="../js/Script.js"></script>
+    </form>
   </body>
 </html>

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
 * {
   margin: 0%;
   padding: 0%;
@@ -6,8 +7,8 @@
 
 .begin {
   position: absolute;
-  top: 70%;
-  left: 50%;
+  top: 110%;
+  left: 11%;
   transform: translate(-60%, -40%);
   font-size: 30px;
   font-weight: 600;
@@ -25,10 +26,11 @@ body {
 .info_box{
     background-color: white;
     position: absolute;
-    top: 20%;
-    left: 30%;
-    right: 30%;
-    bottom: 40%;
+    top: 10%;
+    left: 20%;
+    right: 20%;
+    bottom: 70%;
+    height: 40%
 
 }
 .info_box .info_title{
@@ -39,6 +41,8 @@ body {
     align-items: center; 
     border-color: antiquewhite;
     font-size: 20px;
+    top: 10%;
+    left: 5%;
 }
 
 .info_box .info_list{
@@ -49,7 +53,7 @@ body {
 }
 
 .info_box .info_list .info{
-  margin: 5px 0%;
+  margin: 10px 0%;
 
 }
 

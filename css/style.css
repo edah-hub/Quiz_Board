@@ -1,24 +1,33 @@
-.info_box .button_1,.button_2{
-    font-size: large;
-    font-weight: bold;
-    text-align: center;
-    height: 5px;
-    float: right;
-    cursor: pointer;
-    padding: 5%;
-    display: flex;
-    border-radius: 5%;
-    flex-direction: row-reverse;
-    margin-bottom: 50%;
+.all_questions {
+  position: absolute;
+  top: 70%;
+  left: 20%;
+  right: 20%;
+  height: 100%;
 }
 
-.info_box .button_1 {
-    margin-right: 5%;
-    margin-left: 30%;
-    border-color: none;
-    background-color: #8ac97d;;
-    
+.all_questions .quizzes {
+  margin-left: 5px;
+  margin-bottom: 15px;
 }
-.info_box .button_2{
-    background-color: #8f9e8c;
+
+.submit_btn {
+  margin-top: 5%;
+  position: absolute;
+  padding: 30px 20px;
+  outline: none;
+  border: #000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.all_questions .button_exit {
+  background-color: #8f9e8c;
+  margin-top: 5%;
+  margin-left: 80%;
+  position: absolute;
+  padding: 50px 20px;
+  outline: none;
+  border: #000;
+  border-radius: 5px;
 }

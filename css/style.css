@@ -82,6 +82,9 @@
   cursor: pointer;
 
 }
+.button_exit:hover{
+  background-color:#e65c39;
+}
 
 
 
